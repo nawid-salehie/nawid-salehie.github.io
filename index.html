@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Nawid Salehie</title>
+<meta name="description" content="Bewerbungsseite von Nawid Salehie">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2310283A'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='15' font-weight='700' fill='%237FD6CF' text-anchor='middle'%3ENS%3C/text%3E%3C/svg%3E">
+<style>
+:root {
+  --band: #10283A; --accent: #0B7A75; --accent-lt: #7FD6CF; --on-band: #E6EDF2;
+  --ink: #1E2329; --muted: #5C6670; --rule: #D5DBE0; --line: #BFDAD9; --tag: #E3EFEF;
+  --bg: #FFFFFF; --card: #F6F8F9;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --accent: #5CC2BB; --ink: #E6EAED; --muted: #9AA6B0; --rule: #2C3B47; --line: #2F5856;
+    --tag: #1C3A40; --bg: #0C1822; --card: #13222E;
+  }
+}
+:root[data-theme="dark"] {
+  --accent: #5CC2BB; --ink: #E6EAED; --muted: #9AA6B0; --rule: #2C3B47; --line: #2F5856;
+  --tag: #1C3A40; --bg: #0C1822; --card: #13222E;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font-family: Arial, "Helvetica Neue", Helvetica, system-ui, sans-serif;
+  font-size: 16px; line-height: 1.55;
+}
+a { color: var(--accent); text-underline-offset: 2px; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+
+header.band { background: var(--band); color: var(--on-band); padding: 44px 0 40px; }
+.band .wrap { display: flex; gap: 24px; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; }
+.label { color: var(--accent-lt); font-size: 12px; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; margin: 0 0 6px; }
+h1 { color: #fff; font-size: clamp(32px, 6vw, 46px); line-height: 1.1; margin: 0 0 10px; letter-spacing: -.01em; }
+.tagline { color: var(--accent-lt); margin: 0; font-size: 15px; }
+.contact { text-align: right; font-size: 14px; line-height: 1.7; }
+.contact a { color: var(--on-band); text-decoration: none; }
+.contact a:hover { text-decoration: underline; }
+.contact .private { color: var(--on-band); }
+
+main { padding: 8px 0 56px; }
+section { margin-top: 40px; }
+h2 {
+  font-size: 15px; letter-spacing: .2em; text-transform: uppercase; margin: 0 0 18px;
+  padding-bottom: 8px; border-bottom: 1px solid var(--rule);
+}
+h2 .no { color: var(--accent); margin-right: 14px; letter-spacing: .05em; }
+p { margin: 0 0 12px; }
+.muted { color: var(--muted); }
+
+.notice {
+  margin-top: 28px; padding: 14px 16px; border-left: 3px solid var(--accent);
+  background: var(--card); color: var(--muted); font-size: 14px;
+}
+
+.grid { display: grid; grid-template-columns: 190px 1fr; gap: 6px 20px; }
+.grid > dt { font-weight: 700; color: var(--muted); padding-top: 3px; }
+.grid > dd { margin: 0 0 12px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 4px; }
+.tag { background: var(--tag); padding: 2px 9px; border-radius: 3px; font-size: 14px; }
+.note { color: var(--muted); font-size: 14px; }
+
+.projects { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.project { background: var(--card); border-radius: 6px; padding: 16px 18px; border-top: 3px solid var(--accent); }
+.project h3 { margin: 0 0 6px; font-size: 17px; }
+.project h3 a { color: var(--ink); text-decoration: none; }
+.project h3 a:hover { color: var(--accent); }
+.project p { font-size: 14.5px; margin: 0 0 8px; }
+.project .stack { font-size: 13px; color: var(--muted); margin: 0; }
+
+.timeline { list-style: none; margin: 0; padding: 0; }
+.timeline > li { display: grid; grid-template-columns: 150px 1fr; gap: 20px; }
+.timeline .when { color: var(--muted); font-size: 14px; padding-top: 2px; }
+.timeline .what { border-left: 2px solid var(--line); padding: 0 0 20px 18px; }
+.timeline h3 { margin: 0; font-size: 16px; }
+.timeline .where { color: var(--accent); margin: 2px 0 4px; font-size: 15px; }
+.timeline ul { margin: 4px 0 0; padding-left: 18px; font-size: 15px; list-style: none; }
+.timeline ul li { position: relative; }
+.timeline ul li::before { content: '–'; color: var(--accent); position: absolute; left: -15px; }
+
+.btn {
+  display: inline-block; background: var(--accent); color: #fff; border: 0; border-radius: 4px;
+  padding: 10px 18px; font: inherit; font-weight: 700; cursor: pointer; text-decoration: none;
+}
+.btn:hover { filter: brightness(1.08); }
+footer { border-top: 1px solid var(--rule); padding: 18px 0 28px; color: var(--muted); font-size: 13px; }
+
+@media (max-width: 640px) {
+  header.band { padding: 32px 0 28px; }
+  .contact { text-align: left; }
+  .grid { grid-template-columns: 1fr; gap: 0; }
+  .grid > dt { padding-top: 0; }
+  .timeline > li { grid-template-columns: 1fr; gap: 2px; }
+  .timeline .what { padding-bottom: 18px; }
+}
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <div>
+      <p class="label">Bewerbung</p>
+      <h1>Nawid Salehie</h1>
+      <p class="tagline">Ziel: Technischer Produktdesigner · IT-Praxis · 3D-Druck</p>
+    </div>
+    <div class="contact">
+      <div id="c-private" hidden></div>
+      <div><a id="mail" href="#">E-Mail</a></div>
+      <div><a href="https://github.com/Nawid3333">github.com/Nawid3333</a></div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="notice" id="notice">Anschrift, Telefonnummer, Werdegang und Lebenslauf sind nur über den Link aus meinen Bewerbungsunterlagen sichtbar.</div>
+
+  <section>
+    <h2><span class="no">01</span>Profil</h2>
+    <p>Ich möchte in die Konstruktion wechseln und strebe eine Umschulung zum Technischen Produktdesigner an. Erste Berührung mit dem Thema habe ich über den 3D-Druck. Aus rund einem Jahr im IT-Support und im Rechenzentrumsbetrieb bringe ich den sicheren Umgang mit Rechnern und Software mit, davor habe ich eigenverantwortlich im Versandhandel gearbeitet und ein eigenes Kleingewerbe geführt. In eigenen Softwareprojekten arbeite ich mit Python und JavaScript.</p>
+  </section>
+
+  <div id="private"></div>
+
+  <section>
+    <h2><span class="no" data-n></span>Kenntnisse</h2>
+    <dl class="grid">
+      <dt>3D-Druck</dt><dd><div class="tags"><span class="tag">OrcaSlicer</span></div><div class="note">Grundkenntnisse: Druckvorbereitung von Modellen</div></dd>
+      <dt>Programmierung</dt><dd><div class="tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">HTML5</span><span class="tag">CSS</span><span class="tag">Lua</span></div><div class="note">Im Aufbau: C und C++</div></dd>
+      <dt>Systeme</dt><dd><div class="tags"><span class="tag">Linux</span><span class="tag">Windows</span><span class="tag">Server- und Arbeitsplatzwartung</span></div><div class="note">Grundlagen: Netzwerktechnik</div></dd>
+      <dt>Web und APIs</dt><dd><div class="tags"><span class="tag">REST-APIs</span><span class="tag">httpx</span><span class="tag">Selenium</span><span class="tag">Web-Scraping</span></div><div class="note">Praxis mit den Schnittstellen von TMDB und MangaUpdates</div></dd>
+      <dt>KI und OCR</dt><dd><div class="tags"><span class="tag">PyTorch</span><span class="tag">AMD ROCm</span><span class="tag">PaddleOCR</span><span class="tag">EasyOCR</span><span class="tag">OpenCV</span><span class="tag">Ollama</span></div><div class="note">Praxis aus dem eigenen Projekt OmniScan</div></dd>
+      <dt>Werkzeuge</dt><dd><div class="tags"><span class="tag">Git</span><span class="tag">GitHub Actions</span><span class="tag">pytest</span><span class="tag">KI-Coding-Assistenten</span><span class="tag">MS Office</span><span class="tag">JTL-WaWi</span></div></dd>
+      <dt>Grafik</dt><dd><div class="note">Grundkenntnisse: Shader (GLSL, Slang), Vulkan</div></dd>
+      <dt>Sprachen</dt><dd>Deutsch (Muttersprachniveau) · Dari (Muttersprache) · Englisch (sehr gut) · Spanisch (Grundkenntnisse)</dd>
+      <dt>Führerschein</dt><dd>Klassen A und B</dd>
+    </dl>
+  </section>
+
+  <section>
+    <h2><span class="no" data-n></span>Eigene Projekte</h2>
+    <p class="muted">Öffentlich auf GitHub, entwickelt mit Unterstützung von KI-Coding-Assistenten.</p>
+    <div class="projects">
+      <article class="project">
+        <h3><a href="https://github.com/Nawid3333/FastStream">FastStream</a></h3>
+        <p>Firefox-Erweiterung, die Videos auf Webseiten durch einen eigenen Player ersetzt. Weiterentwicklung eines Forks mit über 600 eigenen Commits, End-to-End-Tests und von Mozilla signierten Veröffentlichungen.</p>
+        <p class="stack">JavaScript · E2E-Tests · GitHub Actions</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/Nawid3333/OmniScan">OmniScan</a></h3>
+        <p>Übersetzungs-Pipeline für Comics mit Desktop-App: GPU-Bildverarbeitung, Texterkennung und lokale Sprachmodelle. In Entwicklung.</p>
+        <p class="stack">Python · TypeScript · Svelte · PyTorch · PaddleOCR · Ollama</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/Nawid3333/TMDB-Movie-Tracker">TMDB Movie Tracker</a></h3>
+        <p>Terminal-Werkzeug, das eine Filmliste über die TMDB-Schnittstelle lokal spiegelt. Automatisierte Tests, ausfallsichere Schreibvorgänge.</p>
+        <p class="stack">Python · pytest · REST-API</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/Nawid3333/mpv-config">mpv-config</a></h3>
+        <p>Konfiguration des Videoplayers mpv für Windows: Einbindung und Vermessung von GPU-Shadern über Vulkan, automatisierte Regressionstests.</p>
+        <p class="stack">Lua · PowerShell · Vulkan</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/Nawid3333/KytyPS5">KytyPS5</a></h3>
+        <p>Erste eigene Änderungen an einem Open-Source-Emulator: Build-System, Tests und Shader-Code.</p>
+        <p class="stack">C++ · CMake</p>
+      </article>
+      <article class="project">
+        <h3><a href="https://github.com/Nawid3333/Mangaupdates">MangaUpdates List Exporter</a></h3>
+        <p>Menügeführtes Werkzeug, das Leselisten über die offizielle MangaUpdates-Schnittstelle exportiert und Änderungen zwischen zwei Exporten erkennt.</p>
+        <p class="stack">Python · REST-API</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Nawid Salehie · Private Bewerbungsseite ohne Cookies, Tracking oder externe Inhalte.</div>
+</footer>
+
+<script>
+(function () {
+  // E-Mail erst im Browser zusammensetzen, damit einfache Adress-Sammler sie nicht finden.
+  var m = ['nawidsalehie', 'yahoo.de'].join('@');
+  var a = document.getElementById('mail');
+  a.textContent = m; a.href = 'mailto:' + m;
+
+  function number() {
+    var n = 1;
+    document.querySelectorAll('h2 .no').forEach(function (el) {
+      el.textContent = String(n++).padStart(2, '0');
+    });
+  }
+  number();
+
+  // Verschlüsselte Inhalte: nur mit dem Schlüssel aus dem Link (#k=...) lesbar.
+  var PRIVATE = '1Nvxb364gf0Q8aJX70JBn6R9UPXacBFq8QZ7FJbzJyjxQ24mZtT0FTiX_CSFiXLdwZrMDroMK78IaSsYkaesHc7mRg93I0yGYVe8fs2bC2ywp1GgTrF7VavcufG5REkVOHQ1qDFHbE83lkb4_KmpDEqIR1lz1Fae3HqgQs62rQjSVjTAwLS95-u80wwoP_NXCFVFOYuroIrZWNYkJh4-AXYZM9KoqLMWYOqYlu3XSBVxum3-e_0apjlsARR4Lby5tIAhthyDGBlM2m8plF0u9c0tn5Z8FnVkMXdKVmYXYdYJZwbAbxETIbHtyjqf3I4NrLrShGUZBEbnWBOJPM5KzF7PY2p0m7C78DJbw421Y6vfcyS0mRdWnCFpSJ-jIEdcMF5mRsynzD-U4Rq_t_Eau1Mg7z7jYaCB_ssiDNCrgbV-mpuVXf0dJBLIE2CEBw8IJY8aIqeK6Ctqd-yq5o6iw2A749mZRrfEPNqjC5Z2M29EbKneYcu1Kb_ZCZaAZCG7gchPK9SSYKH9xY5oOHhREXmd_6n8oNB4P3bao8EoqxYN8kuq0NO9WHeSdwO1bPkRYbAKP60EDxEqLBXGTNWcMIaRRD9UGdS6aIRJmA6C3vzvFrGvQOt3rx2Pp1HgnCJumT-1LXZ7JLiraXszaTJdphYDT4qYDuDTgZ_frq4nYJBy4dOhj3DBnHRJHiiJQNM-XPv4sdWKe8osSEl12HvL4rCEZx3uS1Ya1iaNt0ONpBl0XpBZsctqa4I5rNKphva_FL0ufKBza51SOCufloVVR70PnpZCa69HpjiSHzyFMY2TkEyg1qHfrkPv8nRW-O3zPCWO_ndf8fRnd9CusSnHeWu9bm9aRmDVsdu_4g3ls2cJFgAs86utfDei4CnjNEZHL37Fmp-XXiAtTh5TK950eE8hkUmYMuDAG2uwyXTKb2nI0gDVP2mqH9y2Ql-BLZz6klaVGwxLNKERMTPv2YMQ0KWeuOxf1DEZoO_3rJ48-BbR5WWgFLbkGMwd4NYc_xekAUF5N9VuPf24Ve-GaAn1qVSmaJTUr8fiZIvhAskAvL8cRrAtIUTxmgflifCYoyZuZNcWlycEY8_nGdpRRou251xfThqc8ZTwdJBLlOaI2GvKVkX12YJdOgLjaHDBuYdrZIkrJbb3zPkT8eOuOsJ8FdsXOyozfyA0iPm8L4Py-XVB1ub5UeeR_VrfDqwnoqroH4gIasF24nZ82PCdM1xiZE3z6W606PKoA1cmzQZgcvYCS-m-t2UxwJ0Oc-ugPguVyimkluVG3n1dN2PvW2dYd1U7NJ5whi3Yzv6yoKUclxSqbSNPY7VbgipCPsBqonsQk1SLbd1vnH_YIUSiah2RKKz1hIH-AAA_pELdbAO-QyI9n0LpTU_Gde6EIyprsh86gf8PX7YLNLGICKh6eigCfJH1KWXMhsXDqMq7xChgQy9m4e4X1AKtlyk6-LHS0aj3nCno09qb47ux6sQX1DexFlrlsNXJWGRYJRT9EiBjvGRprAcbuLsS7Ug_nj3b1eOOwZAsikuIF5IfkvUQJ5gzNE2E4qhNvLaETKWczIv_AsRgjL4jf3mugmO59s6qmzL1WOasXvW_62PvExMC78Jhc6heioAuTrtMb3iaUBQRZ5G-Y6SPhJE6eQBVtTIqkqbqYf0VE0ShtjBSm4e6_1-34QaXAbivs-jaI92lrXCIvbS7qBWldlluM0AKcyDeM3em8cLp7b9x1ZzWXUeWD8Oycv1xNa7UwnCHUhzqf8VgYbnyB4unqJdJ841IbhLZaSnZykfx09ICI420Fn5fSRrMN5bR_3F5lBxl1kByHuRmGmct37dHeO2nB1SRt6HcUyvnCIPSp9p1mwtdU4iQrVqs6hd1VT73laDk5olir_O-Q37gEEidjC_-UQ3ykrDDbGwE-6LERYoICTb1Zipqxctqu3TXAONxtpvb8-bcIr6-rufIMhoIw3n1ParUUTtDURz-jHQo1BdGdKvA7hwBqqeiLyat3pxy7IrxelJTnsaQ2ZGvFjFCJCC3r5edFWEzeWilz6Q4FoYyzBTuER8q4XOvyLHZBrLQUi79JXu8_CLnbHzePdVnNF0woJJhym8tPoE-ZWK0LA1mtu_tadMZ5lDKjfus9Ls2qbdDbvF3Adtfdqmijea2eFqzFdQy7pW0VusSdXY8dgxSKU9lSW1acTc5uR0bZGSE4DAZGTdIht6GpnP6WCCSoF7QfmkiG7KkZaadguihCP_jdRPeKPT5Kxjy8_o0APr0Jct-O_nGQFx5WxmVol2fdHVl2Owv0-Xkx7hknfDVkch-Xj4PVtPiPTydRmf8datE1dRLgoPdurnnQgt0ALFVHNLxrLo_5lqtnfJntjridoS5k510kIN54oamBm5eSfSte3W2F4YGyZ7dRZdXSN-W0PYe3CkSyGaUhY1vLklRjHPY5dRYk6RlyBphexiIhhcA0VX7srruPtc1OiiO39yHL_-dQXlzy2TaJYsWdJy5_IPcKEzaA1JrjeEtbG9LbYhgKfZbMyqZLKClnosyp8-3KOKpBxXJR9d0cekgto_zkEcyJJ3qGa2n9WIh3M0YzSzac7_RpDD4IN46HsZNEXQi7UIJodWPOM61v5m5bMCuaE42GaXr4M_1j1XQtGmd5VuH8pP0jw9WD1s5jipv74vvtpymDvue-PBBEgRcg5tBl0LYk8f_N1it4gcxP0GxR0reiYR5mNMd4PjB0K7NQNLywXtcSTYRs4EpYEqlUxCj0wRLFzfPGHQKOzCFTGD4pan4uuHy0tKY86_TnR6aR0GPvTHaMvpcRElqeeHURq-IdPYCAiKEit9d54bZSMaHVPV3_ThrsJZ9CH8Gd6vWKUfIqvtl4abFZXTAGi9mD6B83AwzZuhrtoFLm45GowhrnOltgWi733rSW5_pYpvHTA0FZ0dmv4ZJ1H2-WE_D0m1xaG1RWhQ6Onq-F734URhmZkxDBnD9cJ6Qt6b8vFa1IrIPCTL9HHxFg0hKd3IcXeHAQChek0HlAwkbaILnkUN4IndqC-PYr2MDysjyUsTSHy41j6LRf0SV9t2lgUyTqQ9mM6vbW_FezG1YYbAWsWfUG8qZi7NnUVv_hJKixllzVQ38Qo-AlFcbE3ytSVUURNO_r67bvPB8-Z_tCxlrQmfCCUvB_XkW2S7QtsOsaLdoOYV7v2KgX1OJx89OdZu2SoXuc6YaiDwt_oeShiEuAkmUHfGhYpnyRBeLRAJGLlY04vps9ehflVYBqn6CV8L3wpZprRPUrEIcU2BXL-vWZpNOfKzPKdDY39W2UWH99l4IajLhvuELaRILmT-_IBQW3HO8Fz_wUbHuKBijkLORqIW1PoNNgEZ414iSlf8rWxxN2sc4V3AYn5KxeiT6GdFDqvpCOBK1vRcCBsm0dRuYK8hJbLeblFD7M7NfDrKmGxgSI6kO21XG73ryvnq-4_9bdY_cdLyCUpo9BLj489lZsERWViz4pblk_z4C7QDRncYQRjszlORm6A3j0r4CbeYMcc7nBAi5z5VlX95oyz-9MRNaFsriBRCObv5Xk5e7_wxxGiGGngRMCmhh5d8SHY3U_pftTRZE2ZQlvl4bnH6lL1ZAqbU3xdldaB38iMF_9qE0M7TT9gpjCFjS7iPdfzlizZzB-dFd1V-wJZNCJHHfOQS-o8VzPYY6qmj3dCbput5NC3pd5dyA9elh7KhsAhMkoS7cmRkeWwbcUaXwAbSS8nY1jiLxbMF0biHyCN-KDM-AiN3Y8Cz0VJfzmicunjv91DPvbY_rDAdlhm7hWmDraXmHhRn0V1xEJZbqV1D_K7Mj-4gkU-4T9iqekySvaxBt_SwDmZ3vEe9y7rM-q_fkY7QvWhIiACsKZqy3ZMOJwjdOe7bKwPkskU2_sC4ntrIw0klaT27QgbW0dXJOsZx_LBWvB1vR5bFG3uxB_Lw6X-E67po1enK9c1n5Y6oBjqx6LAJuQpXbp-mG9XGcgBMpU3rpVao33t-AedOu9rVCclR9corllCOH33glHgNAHbURRh1hDSSlhBIjhFBEeJKLq3_ESasfRohmYf4KkFKaSFfPL4iz0H28U0FxCadm';
+  var CV_FILE = 'lebenslauf.bin';
+
+  function b64u(s) {
+    s = s.replace(/-/g, '+').replace(/_/g, '/');
+    while (s.length % 4) s += '=';
+    var bin = atob(s), out = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
+  function decrypt(key, bytes) {
+    return crypto.subtle.decrypt({ name: 'AES-GCM', iv: bytes.slice(0, 12) }, key, bytes.slice(12));
+  }
+
+  var match = location.hash.match(/k=([A-Za-z0-9_-]{22})/);
+  if (!match || !window.crypto || !crypto.subtle) return;
+
+  crypto.subtle.importKey('raw', b64u(match[1]), 'AES-GCM', false, ['decrypt'])
+    .then(function (key) {
+      return decrypt(key, b64u(PRIVATE)).then(function (buf) {
+        var data = JSON.parse(new TextDecoder().decode(buf));
+        var c = document.getElementById('c-private');
+        c.innerHTML = data.contact; c.hidden = false;
+        document.getElementById('private').innerHTML = data.sections;
+        document.getElementById('notice').remove();
+        number();
+        var btn = document.getElementById('cv');
+        if (btn) btn.addEventListener('click', function () {
+          btn.disabled = true;
+          fetch(CV_FILE).then(function (r) { return r.arrayBuffer(); })
+            .then(function (ab) { return decrypt(key, new Uint8Array(ab)); })
+            .then(function (pdf) {
+              var url = URL.createObjectURL(new Blob([pdf], { type: 'application/pdf' }));
+              var l = document.createElement('a');
+              l.href = url; l.download = 'Lebenslauf_Nawid_Salehie.pdf';
+              document.body.appendChild(l); l.click(); l.remove();
+              setTimeout(function () { URL.revokeObjectURL(url); }, 10000);
+            })
+            .catch(function () { alert('Der Lebenslauf konnte nicht geladen werden.'); })
+            .finally(function () { btn.disabled = false; });
+        });
+      });
+    })
+    .catch(function () { /* falscher oder fehlender Schlüssel: öffentliche Ansicht bleibt */ });
+})();
+</script>
+</body>
+</html>
